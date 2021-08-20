@@ -8,7 +8,7 @@ import { CameraFeed } from './Camera';
 const uploadImage = async file => {
     const formData = new FormData();
     formData.append('file', file);
-    axios.post('https://grocerybased.herokuapp.com/uploadcam', formData);
+    axios.post('http://127.0.0.1:5000/uploadcam', formData);
 
     // Connect to a seaweedfs instance
 };

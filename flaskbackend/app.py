@@ -9,13 +9,14 @@ import logging
 from PIL import Image
 import os  # should be removed in final version
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "hackthenorth-be7580cfcf6a.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "PUT YOUR GENERATED GOOGLE CLOUD API VISION KEY HERE"
 
 logging.basicConfig(level=logging.INFO)
 
 logger = logging.getLogger('HELLO WORLD')
 
 app = Flask(__name__)
+CORS(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///example.db'
 db = SQLAlchemy(app)
 api = Api(app)
