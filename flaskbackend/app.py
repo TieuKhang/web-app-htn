@@ -9,7 +9,7 @@ import logging
 from PIL import Image
 import os  # should be removed in final version
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "PUT YOUR GENERATED GOOGLE CLOUD API VISION KEY HERE"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "sporthangout-4aa5001987b8.json"
 
 logging.basicConfig(level=logging.INFO)
 
